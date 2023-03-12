@@ -1,7 +1,10 @@
+// Khai báo và nhập vào 3 phần tử a,b,c
 var a = parseInt(prompt("Nhập a: "));
 var b = parseInt(prompt("Nhập b: "));
 var c = parseInt(prompt("Nhập c: "));
+// Khai báo và tính delta
 var delta = b * b - 4 * a * c;
+// Xét từng trường hợp để đưa ra đáp án đúng
 if(delta<0){
     document.writeln("Phương trình vô nghiệm!");
 
