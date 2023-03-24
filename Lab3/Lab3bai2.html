@@ -1,41 +1,41 @@
+2 / 2
+
+Dưới đây là một ví dụ về máy tính đơn giản bằng HTML, CSS và JavaScript. Bạn có thể sử dụng các hàm tính toán cơ bản như eval() để tính toán các phép tính cơ bản.
+
+HTML:
+
+php
+Copy code
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <div class="calculator">
-        <div class="display">
-          <input type="text" id="input">
-        </div>
-        <div class="buttons">
-          <button onclick="clearInput()">C</button>
-          <button onclick="addInput('+')">+</button>
-          <button onclick="addInput('-')">-</button>
-          <button onclick="addInput('*')">*</button>
-          <button onclick="addInput('/')">/</button>
-          <button onclick="calculate()">=</button>
-        </div>
-        <div class="row">
-          <button onclick="addInput('7')">7</button>
-          <button onclick="addInput('8')">8</button>
-          <button onclick="addInput('9')">9</button>
-        </div>
-        <div class="row">
-          <button onclick="addInput('4')">4</button>
-          <button onclick="addInput('5')">5</button>
-          <button onclick="addInput('6')">6</button>
-        </div>
-        <div class="row">
-            <button onclick="addInput('4')">1</button>
-            <button onclick="addInput('5')">2</button>
-            <button onclick="addInput('6')">3</button>
-          </div>
-        </div>
-    
+	<div class="calculator">
+		<div class="screen">
+			<input type="text" id="display" readonly>
+		</div>
+		<div class="keys">
+			<button onclick="clearDisplay()">C</button>
+			<button onclick="addToDisplay('/')">/</button>
+			<button onclick="addToDisplay('*')">*</button>
+			<button onclick="addToDisplay('-')">-</button>
+			<button onclick="addToDisplay('7')">7</button>
+			<button onclick="addToDisplay('8')">8</button>
+			<button onclick="addToDisplay('9')">9</button>
+			<button onclick="addToDisplay('+')">+</button>
+			<button onclick="addToDisplay('4')">4</button>
+			<button onclick="addToDisplay('5')">5</button>
+			<button onclick="addToDisplay('6')">6</button>
+			<button onclick="addToDisplay('1')">1</button>
+			<button onclick="addToDisplay('2')">2</button>
+			<button onclick="addToDisplay('3')">3</button>
+			<button class="zero" onclick="addToDisplay('0')">0</button>
+			<button onclick="calculate()">=</button>
+		</div>
+	</div>
+	<script src="Lab3bai2.js"></script>
 </body>
 </html>
