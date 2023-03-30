@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assignment.css">
+    <script src="https://kit.fontawesome.com/34458bfc09.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="dinhdang">
+    <header>
+        <div class="menu container" >
+            <a href="" id="logo">
+                <img src="../Assignment/videovaimage/logo.png" alt="">
+            </a>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a> </li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Tư liệu </a></li>
+                    <li><a href="#">Liên hệ </a></li>
+                </ul>
+            </nav>
+        	<div class="button-container">
+                <button type="submit">
+                  <span>Đăng nhập</span>
+                    <i class="fas fa-user"></i>
+                </button>
+        	</div>
+        </div>
+    </header>
+    <div id="banner">
+        <video autoplay loop muted src="../Assignment/videovaimage/y2mate.com - Live Wallpaper  Genshin Impact  Aether_1080p.mp4" autoplay></video>
+        <div class="khauhieu">Chính thức ra mắt trên nhiều nền tảng, đến tải ngay</div>
+        <div class="nentang">
+            <div class="nentang1"><a href=""><img src="../Assignment/videovaimage/ps.png" alt=""></a></div>
+            <div class="nentang1"><a href=""><img src="../Assignment/videovaimage/ios.png" alt=""></a></div>
+            <div class="nentang1"><a href=""><img src="../Assignment/videovaimage/chplay.png" alt=""></a></div>
+            <div class="nentang1"><a href=""><img src="../Assignment/videovaimage/window.png" alt=""></a></div>
+        </div>
+        <i class="fa-solid fa-angles-down fa-bounce" ></i>
+    </div>
+    <main class="main">
+        <div id ="content">
+        <img src="../Assignment/videovaimage/allchar.avif" alt="">
+    </div> 
+       <div class="tintuc"> 
+        <div class="anhnen"><img src="../Assignment/videovaimage/quanruou.jpg" alt=""></div>
+        <div class="flex">
+            <div id ="slide">
+                  <div class="slideshow-container">
+                    <a href="#"><img class="mySlides" src="../Assignment/videovaimage/slide1.jpg"></a>
+                    <a href="#"><img class="mySlides" src="../Assignment/videovaimage/slide2.jpg"></a>
+                    <a href="#"><img class="mySlides" src="../Assignment/videovaimage/slide3.jpg"></a>
+                    <a href="#"> <img class="mySlides" src="../Assignment/videovaimage/slide4.jpg"></a>
+              </div>
+            </div>
+            <div class="thongtin">
+                <div class="thongtin-1">
+                    <div class="moi">Mới</div>
+                    <div class="flex2"><span id="thongtin-2">Thông báo chương  live đặc biệt phiên bản 3.6.</span><span>29/03/2023</span></div>
+                    <div class="flex2"><span id="thongtin-2">Gợi ý cách chơi "Kỳ trận nấm linh".</span><span>22/03/2023</span></div>
+                    <div class="flex2"><span id="thongtin-2">[Genshin Impact]-Mika: Ngôi sao đồng hành.</span>21/03/2023</div>
+                    <div class="flex2"><span id="thongtin-2">Tuyển tập Genshin Impact - A Scattered Rainbow Over Spring Dew.</span><span>20/03/2023</span></div>
+                    <div class="flex2"><span id="thongtin-2">"Mau chóng điều chỉnh trạng thái, nhiệm vụ tiếp theo sẽ đến bất kỳ lúc nào."</span><span>17/03/2023</span></div>
+                    <div> <i class="fa-sharp fa-light fa-plus"></i> Tải thêm </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </main>
+ 
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('header').addClass('sticky');
+                }else{
+                    $('header').removeClass('sticky');
+                }
+            });
+        });
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); 
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.boder{
+    width: 100px;
+    height: 200px;
+    background-color: black;
+    
+}
